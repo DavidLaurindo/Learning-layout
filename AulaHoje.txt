@@ -1,0 +1,198 @@
+
+FONTES:
+
+https://fontawesome.com/icons?d=gallery
+
+https://fonts.google.com/?selection.family=Lato
+
+
+
+
+CÓDIGO HTML5
+___________________________________________________________________________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Especializada em Soluções Digitais </title>
+<meta name="description" content="Agência especializada em Marketing Digital, Criação de Sites e Aplicativos Mobile.">
+<meta name="keywords" content="Agência digital, Marketing, Sites">
+<meta name="robots" content="index, follow">
+<meta name="author" content="PachaMama">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="icon" href="img/icon01.png">
+</head>
+<body>
+<!-- CABEÇALHO --> 
+<header class="cabecalho">
+<a href="index.html"><h1 class="logo">Especializada em Soluções Digitais </h1></a>
+<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+<nav class="menu">
+<a><i></i></a>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Clientes</a></li>
+<li><a href="#">Serviços</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Quem somos</a></li>
+<li><a href="#">Contato</a></li>
+</ul>
+</nav> 
+</header>
+<!-- BANNER --> 
+<div>
+<div>
+<h2> OUSE INOVAR! </h2>
+<h3> Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</h3>
+</div>
+<div>
+<button> Cadastrar <i></i></button>
+<button> Sobre <i></i></button>
+</div>
+</div>
+<!-- SERVICOS --> 
+<main>
+<article>
+<a href="#"><img src="img/img1.jpg" alt="Campanhas publicitárias"></a>
+<div>
+<a href="#"> Campanhas Publicitárias </a>
+<h4>Impressos, VTs e Jingles</h4>
+<p>Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais.
+Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade. </p>
+</div>
+</article>
+<article>
+<a href="#"><img src="img/img02.jpg" alt="Marketing Digital"></a>
+<div>
+<a href="#"> Marketing Digital </a>
+<h4>Administração de Redes Sociais</h4>
+<p>Como agência de publicidade aplicamos estratégias nos meios 
+digitais para que a seu negócio seja visto por milhões de usuários. 
+O Brasil é o 5° país mais conectado do mundo. Por este motivo, o seu 
+negócio não pode ficar fora do do mercado digital </p>
+</div>
+</article>
+<article>
+<a href="#"><img src="img/img3.jpg" alt="Criação de Sites"></a>
+<div>
+<a href="#"> Criação de Sites </a>
+<h4> Sites Administráveis </h4>
+<p>Agora você pode administrar seu site quando e como quiser.
+E melhor ainda pois você pode pagar por este serviço, pois desenvolvemos de
+forma. Seu site atualizado, com seus últimos 
+produtos, integração com redes sociais, agora é possível. </p>
+</div>
+</article>
+</main>
+<!-- NEWSLETTER -->
+<section>
+<h2> Inscreva-se agora! </h2>
+<h3> Receba novidades, dicas e muito mais </h3>
+<form>
+<input type="email" name="email" placeholder="Seu email">
+<button> Cadastrar </button>
+</form>
+</section>
+<!-- RODAPÉ -->
+<footer>
+<div>
+<a href="#"><i></i></a>
+<a href="#"><i></i></a>
+<a href="#"><i></i></a>
+<a href="#"><i></i></a>
+<a href="#"><i></i></a>
+</div>
+<p>
+Copyright © PachaMama 2019. Todos os direitos reservados.
+</footer> 
+
+<!-- JQUERY --> 
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+$(".btn-menu").click(function(){
+$(".menu").show();
+});
+$(".btn-close").click(function(){
+$(".menu").hide();
+});
+</script> 
+</body>
+</html>
+
+______________________________________________________________________________________________
+
+
+
+CÓDIGO CSS
+__________________________________________________________________________________________________________________________
+
+
+*
+{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'lato', sans-serif;
+}
+
+body
+{
+	background-color: #f5f5f5;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+ul
+{
+	list-style: none;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+/*cabeçalho*/
+
+/*cabecalho2*/
+.logo
+{
+	width: 56px;
+	height: 56px;
+	float: left;
+	background: url(../img/logo.png) center center/56px no-repeat;
+	font-size: 0;
+}
+
+.btn-menu
+{
+	width: 56px;
+	height: 56px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+} 
+
+/*Menu*/
+.menu
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+}	
